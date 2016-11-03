@@ -3,7 +3,7 @@
 
 # [TemplateFSW]
 
-[![Regional Jataí - Universidade Federal de Goiás - UFG](https://aws.cercomp.ufg.br/up/162/o/regioanl.png)](https://www.jatai.ufg.br/)
+[![Universidade Federal de Goiás](https://s15.postimg.org/etrvq3hcb/logo_regional.png)](https://www.jatai.ufg.br)
 
 Template genérico para os projetos desenvolvidos na Fábrica de Software da UFG Regional Jataí
 
