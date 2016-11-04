@@ -1,9 +1,10 @@
 
 
 
-# [TemplateFSW]
+# TemplateFSW
 
 [![Universidade Federal de Goiás](https://s15.postimg.org/etrvq3hcb/logo_regional.png)](https://www.jatai.ufg.br)
+
 
 Template genérico para os projetos desenvolvidos na Fábrica de Software da UFG Regional Jataí
 
@@ -12,6 +13,8 @@ Template genérico para os projetos desenvolvidos na Fábrica de Software da UFG
 
 - [Introdução](#Intro)
 - [Estrutura de Pastas](#Pastas)
+- [Instalação](#Install)
+- [Para modificar o template](#Manter)
 
 
 <a name="Intro"></a>
@@ -25,35 +28,38 @@ O intuito deste repositorio é manter um estilo padrão para todos os projetos d
 
 
 
+<a name="Install"></a>
+## Instalação
 
-## Getting Started
+1 - Utilize o bower para instalação na pasta raiz do projeto
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git`
-* Fork the repo
+```bash
+bower install FSWTemplate
+```
 
-## Using the Source Files
+2 - Dentro da pasta bower_components->templateFSW, copie as pastas `bootstrap`, `dist` e `plugins` para a pasta `public`.
 
-After cloning the repo take a look at the `gulpfile.js` and check out the tasks available:
-* `gulp` The default task will compile the LESS and JS into the `dist` directory and minify the output, and it will copy all vendor libraries from `bower_components` into the `vendor` directory
-* `gulp dev` The dev task will serve up a local version of the template and will watch the LESS, JS, and HTML files for changes and reload the browser windo automatically
+```
+- projeto
+    - bower_components
+	      - templateFSW
+            - bootstrap
+            - dist
+            - plugins
+```
 
-To update dependencies, run `bower update` and then run `gulp copy` to copy the updated dependencies into the `vendor` directory
 
-## Bugs and Issues
+<a name="Manter"></a>
+## Para modificar o template
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/).
+Depois de clonar o repositorio, instale `npm`, `bower` e `gulp`
 
-## Creator
+```bash
+npm install
+```
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+Utilize:
+* `gulp` O comando irá executar as tarefas compilando o LESS e o JS na pasta `dist` e minify , e irá copiar toda os plugins da pasta `bower_components` na pasta `plugins`
+* `bower update` para atualizar as dependências
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/blob/gh-pages/LICENSE) license.
