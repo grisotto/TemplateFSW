@@ -42,10 +42,10 @@ bower install FSWTemplate
 ```
 - projeto
     - bower_components
-	      - templateFSW
-            - bootstrap
-            - dist
-            - plugins
+	- templateFSW
+          - bootstrap
+          - dist
+          - plugins
 ```
 
 
