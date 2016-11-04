@@ -1,6 +1,3 @@
-
-
-
 # TemplateFSW
 
 [![Universidade Federal de Goiás](https://s15.postimg.org/etrvq3hcb/logo_regional.png)](https://www.jatai.ufg.br)
@@ -62,4 +59,7 @@ Utilize:
 * `gulp` O comando irá executar as tarefas compilando o LESS e o JS na pasta `dist` e minify , e irá copiar toda os plugins da pasta `bower_components` na pasta `plugins`
 * `bower update` para atualizar as dependências
 
+----------
+**Materiais de Apoio**
 
+ - [**Aprendendo less in 10 minutos**](http://tutorialzine.com/2015/07/learn-less-in-10-minutes-or-less/): Inciando estudos para modificar os estilos
