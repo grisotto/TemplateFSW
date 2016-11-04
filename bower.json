@@ -26,6 +26,7 @@
     "/vendor",
     "gulpfile.js",
     "/less"
+    "/test"
   ],
   "main": [
     "dist/css/sb-admin-2.css",

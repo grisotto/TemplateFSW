@@ -121,16 +121,16 @@ body {
   color: #428bca;
 }
 .btn-success.btn-outline {
-  color: #5cb85c;
+  color: #27ae60;
 }
 .btn-info.btn-outline {
-  color: #5bc0de;
+  color: #2980b9;
 }
 .btn-warning.btn-outline {
-  color: #f0ad4e;
+  color: #e67e22;
 }
 .btn-danger.btn-outline {
-  color: #d9534f;
+  color: #c0392b;
 }
 .btn-primary.btn-outline:hover,
 .btn-success.btn-outline:hover,
@@ -238,46 +238,46 @@ table.dataTable thead .sorting:after {
   font-size: 40px;
 }
 .panel-green {
-  border-color: #5cb85c;
+  border-color: #27ae60;
 }
 .panel-green > .panel-heading {
-  border-color: #5cb85c;
+  border-color: #27ae60;
   color: white;
-  background-color: #5cb85c;
+  background-color: #27ae60;
 }
 .panel-green > a {
-  color: #5cb85c;
+  color: #27ae60;
 }
 .panel-green > a:hover {
-  color: #3d8b3d;
+  color: #19703e;
 }
 .panel-red {
-  border-color: #d9534f;
+  border-color: #c0392b;
 }
 .panel-red > .panel-heading {
-  border-color: #d9534f;
+  border-color: #c0392b;
   color: white;
-  background-color: #d9534f;
+  background-color: #c0392b;
 }
 .panel-red > a {
-  color: #d9534f;
+  color: #c0392b;
 }
 .panel-red > a:hover {
-  color: #b52b27;
+  color: #81261d;
 }
 .panel-yellow {
-  border-color: #f0ad4e;
+  border-color: #e67e22;
 }
 .panel-yellow > .panel-heading {
-  border-color: #f0ad4e;
+  border-color: #e67e22;
   color: white;
-  background-color: #f0ad4e;
+  background-color: #e67e22;
 }
 .panel-yellow > a {
-  color: #f0ad4e;
+  color: #e67e22;
 }
 .panel-yellow > a:hover {
-  color: #df8a13;
+  color: #a85913;
 }
 .timeline {
   position: relative;
