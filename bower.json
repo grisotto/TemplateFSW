@@ -25,7 +25,7 @@
     "package.json",
     "/vendor",
     "gulpfile.js",
-    "/less"
+    "/less",
     "/test"
   ],
   "main": [
