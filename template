@@ -1,0 +1,115 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+	./template -h
+
+elif [ "$1" = "update" ] ##############################################UPDATE
+then
+	if [ -z "$2" ]
+	then
+		echo "Update simples"
+		bower update
+		cp --recursive bower_components/templatefsw/bootstrap ./
+		cp --recursive bower_components/templatefsw/dist ./
+		cp --recursive bower_components/templatefsw/plugins ./
+	else
+		if [ "$2" = "laravel" ]
+		then
+			echo "Fazendo o update do template, respeitando hierarquia laravel"
+			bower update
+			cp --recursive bower_components/templatefsw/bootstrap ./public/vendor/bootstrap/bootstrap/
+			cp --recursive bower_components/templatefsw/dist/* ./public/dist/
+			cp --recursive bower_components/templatefsw/plugins ./public/plugins/
+			echo "    Done"
+		else
+			echo "Ainda não há suporte para hierarquia $2"
+		fi
+	fi
+
+elif [ "$1" = "install" ] #########################################INSTALL
+then
+	if [ -z "$2" ]
+	then
+		echo "Instalando template"
+		bower install FSWTemplate
+		cp --recursive bower_components/templatefsw/bootstrap ./
+		cp --recursive bower_components/templatefsw/dist ./
+		cp --recursive bower_components/templatefsw/plugins ./
+		echo "    Done"
+	else
+		if [ "$2" = "laravel" ]
+		then
+			echo "Instalando template, respeitando hierarquia laravel"
+			bower install FSWTemplate
+			cp --recursive bower_components/templatefsw/bootstrap ./public/vendor/bootstrap/bootstrap/
+			cp --recursive bower_components/templatefsw/dist ./public/dist/
+			cp --recursive bower_components/templatefsw/plugins ./public/plugins/
+		else
+			echo "Ainda não há suporte para hierarquia $2"
+		fi
+
+	fi
+
+elif [ "$1" = "fix-gulp" ]
+then
+	echo "Instalando gulp local e plugins"
+	npm install gulp gulp-uglify gulp-less browser-sync gulp-header gulp-clean-css gulp-rename
+	echo "    Done"
+
+elif [ "$1" = "install-bower" ]
+then
+	echo "Instalando bower"
+	sudo npm install bower -g
+	echo "    Done"
+
+elif [ "$1" = "install-gulp" ]
+then
+	echo "Instalando gulp"
+	sudo npm install gulp -g
+	echo "    Done"
+
+
+elif [ "$1" = "laradock-up" ]
+then
+	echo "Upando servidor \"laradock\""
+	cd laradock; sudo docker-compose up -d nginx phpmyadmin mysql
+	echo "    Done"
+
+elif [ "$1" = "laradock-down" ]
+then
+	echo "Parando servidor \"laradock\""
+	cd laradock; sudo docker-compose down 
+	echo "    Done"
+
+elif [ "$1" = "fix-laradock-error" ]
+then
+	echo "Parando apache2"
+	sudo service apache2 stop
+	echo "Parando mysql"
+	sudo service mysql stop
+	echo "Parando phpmyadmin"
+	sudo service phpmyadmin stop
+	echo "Parando ssh"
+	sudo service ssh stop
+	echo "   Done"
+
+
+elif [ "$1" = "-h" ]
+then
+	echo "Parâmetros aceitáveis"
+	echo "    update              → atualiza template (simples)"
+	echo "    update laravel      → atualiza template, respeitando pastas laravel"
+	echo "    install             → atualiza template (simples)"
+	echo "    install laravel     → instala template, respeitando pastas laravel"
+	echo "    fix-gulp            → instala gulp local e plugins necessários (do gulp)"
+	echo "    install-bower       → instala o bower globalmente (usando npm)"
+	echo "    install-gulp        → instala o gulp globalmente (usando npm)"
+	echo "    laradock-up         → upa o servidor laradock (se disponível)"
+	echo "    laradock-down       → upa o servidor laradock (se disponível)"
+	echo "    fix-laradock-error  → para serviços os quais provavelmente usam portas que o laradock irá usar (ssh, apache2, phpmyadmin e mysql)"
+
+else
+	echo "ERRO: comando $1 não encontrado"
+	echo "   Para saber os comandos disponíveis, use \"-h\""
+fi
