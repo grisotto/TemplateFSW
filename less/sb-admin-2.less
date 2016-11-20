@@ -1,12 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
 
-// Global Styles
-
-body {
-    background-color: @gray-lightest;
-}
-
 // Wrappers
 
 #wrapper {
@@ -22,7 +16,7 @@ body {
 @media(min-width:768px) {
     #page-wrapper {
         position: inherit;
-        margin: 0 0 0 250px;
+    	margin: 0 0 0 230px;
         padding: 0 30px;
         border-left: 1px solid darken(@gray-lightest, 6.5%);
     }
@@ -34,133 +28,140 @@ body {
 
 // -- -- Modificações feito pela fábrica
 
-
-
-
-
-
-
-
-
-
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav > li > a.active:hover{
+	text-decoration: none;
+	font-style: italic;
+	background-color: #555555;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #222;
+  border-color: #337ab7;
+}
+.navbar{
+	background-color: @menu-color;
+}
 .navbar-top-links {
-    margin-right: 0;
+	margin-right: 0;
 }
-
 .navbar-top-links li {
-    display: inline-block;
+	display: inline-block;
 }
-
 .navbar-top-links li:last-child {
-    margin-right: 15px;
+	margin-right: 15px;
 }
-
 .navbar-top-links li a {
-    padding: 15px;
-    min-height: 50px;
+	color: #dddddd;
+	padding: 15px;
+	min-height: 50px;
 }
-
 .navbar-top-links .dropdown-menu li {
-    display: block;
+	background-color: @menu-color;
+	display: block;
 }
-
 .navbar-top-links .dropdown-menu li:last-child {
-    margin-right: 0;
+	background-color: @menu-color;
+	margin-right: 0;
 }
-
 .navbar-top-links .dropdown-menu li a {
-    padding: 3px 20px;
-    min-height: 0;
+	background-color: @menu-color;
+	padding: 3px 20px;
+	min-height: 0;
 }
-
 .navbar-top-links .dropdown-menu li a div {
-    white-space: normal;
+	background-color: @menu-color;
+	white-space: normal;
 }
-
 .navbar-top-links .dropdown-messages,
 .navbar-top-links .dropdown-tasks,
 .navbar-top-links .dropdown-alerts {
-    width: 310px;
-    min-width: 0;
+	background-color: @menu-color;
+	width: 310px;
+	min-width: 0;
 }
-
 .navbar-top-links .dropdown-messages {
-    margin-left: 5px;
+	background-color: @menu-color;
+	margin-left: 5px;
 }
-
 .navbar-top-links .dropdown-tasks {
-    margin-left: -59px;
+	background-color: @menu-color;
+	margin-left: -59px;
 }
-
 .navbar-top-links .dropdown-alerts {
-    margin-left: -123px;
+	background-color: @menu-color;
+	margin-left: -123px;
 }
-
 .navbar-top-links .dropdown-user {
-    right: 0;
-    left: auto;
+	background-color: @menu-color;
+	right: 0;
+	left: auto;
 }
-
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	color: #ffffff;
+	text-decoration: none;
+  	background-color: #222;
+	border-style: solid;
+	border-color: #333;
+	border-radius: 10px;
+	border-width: 0.4px;
+}
+body{
+	background-color: @menu-color;
+}
 // --Sidebar
-
-.sidebar {
-    .sidebar-nav.navbar-collapse {
-        padding-left: 0;
-        padding-right: 0;
-    }
+/* Sidebar */
+.sidebar a{
+  color: #dddddd;
 }
-
+.sidebar .sidebar-nav.navbar-collapse {
+  background-color: #333333;
+  padding-left: 0;
+  padding-right: 0;
+}
 .sidebar .sidebar-search {
-    padding: 15px;
+  padding: 15px;
 }
-
-.sidebar ul li {
-    border-bottom: 1px solid darken(@gray-lightest, 6.5%);
-    a {
-        &.active {
-            background-color: @gray-lighter;
-        }
-    }
+.sidebar ul li a.active {
+	background-color: #202020;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.3px;
 }
-
 .sidebar .arrow {
-    float: right;
+  float: right;
 }
-
 .sidebar .fa.arrow:before {
-    content: "\f104";
+  content: "\f104";
 }
-
 .sidebar .active > a > .fa.arrow:before {
-    content: "\f107";
+  content: "\f107";
 }
-
 .sidebar .nav-second-level li,
 .sidebar .nav-third-level li {
-    border-bottom: none !important;
+  border-bottom: none !important;
 }
-
 .sidebar .nav-second-level li a {
-    padding-left: 37px;
+  padding-left: 37px;
 }
-
 .sidebar .nav-third-level li a {
-    padding-left: 52px;
+  padding-left: 52px;
 }
-
-@media(min-width:768px) {
-    .sidebar {
-        z-index: 1;
-        position: absolute;
-        width: 250px;
-        margin-top: 51px;
-    }
-
-    .navbar-top-links .dropdown-messages,
-    .navbar-top-links .dropdown-tasks,
-    .navbar-top-links .dropdown-alerts {
-        margin-left: auto;
-    }
+@media (min-width: 768px) {
+  .sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 230px;
+    margin-top: 50px;
+  }
+  .navbar-top-links .dropdown-messages,
+  .navbar-top-links .dropdown-tasks,
+  .navbar-top-links .dropdown-alerts {
+    margin-left: auto;
+  }
 }
 
 // Buttons
