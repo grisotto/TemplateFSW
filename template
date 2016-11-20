@@ -18,7 +18,7 @@ then
 		then
 			echo "Fazendo o update do template, respeitando hierarquia laravel"
 			bower update
-			cp --recursive bower_components/templatefsw/bootstrap ./public/vendor/bootstrap/bootstrap/
+			cp --recursive bower_components/templatefsw/bootstrap ./public/vendor/bootstrap
 			cp --recursive bower_components/templatefsw/dist/* ./public/dist/
 			cp --recursive bower_components/templatefsw/plugins ./public/plugins/
 			echo "    Done"
@@ -42,9 +42,9 @@ then
 		then
 			echo "Instalando template, respeitando hierarquia laravel"
 			bower install FSWTemplate
-			cp --recursive bower_components/templatefsw/bootstrap ./public/vendor/bootstrap/bootstrap/
-			cp --recursive bower_components/templatefsw/dist ./public/dist/
-			cp --recursive bower_components/templatefsw/plugins ./public/plugins/
+			cp --recursive bower_components/templatefsw/bootstrap ./public/vendor/bootstrap
+			cp --recursive bower_components/templatefsw/dist ./public/dist
+			cp --recursive bower_components/templatefsw/plugins ./public/plugins
 		else
 			echo "Ainda não há suporte para hierarquia $2"
 		fi
