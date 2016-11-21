@@ -1,16 +1,16 @@
 {
-  "name": "startbootstrap-sb-admin-2",
-  "homepage": "http://startbootstrap.com/template-overviews/sb-admin-2/",
-  "version": "3.3.7+1",
+  "name": "template-fsw",
+  "homepage": "http://github.com/qualquercoisaaí",
+  "version": "1.0.0",
   "authors": [
-    "David Miller"
+    "Equipe Fábrica de Software"
   ],
-  "description": "A free, open source, Bootstrap admin theme created by Start Bootstrap",
+  "description": "Template usado para os projetos da Fábrica de Software da Regional Jataí",
   "keywords": [
     "bootstrap",
     "theme"
   ],
-  "license": "MIT",
+  "license": "GNU",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -38,7 +38,8 @@
     "morrisjs": "~0.5.1",
     "datatables-responsive": "1.0.6",
     "bootstrap-social": "~4.8.0",
-    "flot.tooltip": "~0.8.4"
+    "flot.tooltip": "~0.8.4",
+	"jquery": "~2.1"
   },
   "resolutions": {
     "font-awesome": "~4.6.3"

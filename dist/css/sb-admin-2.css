@@ -19,6 +19,7 @@
     border-left: 1px solid #e7e7e7;
   }
 }
+<<<<<<< HEAD
 .nav > li > a:hover,
 .nav > li > a:focus,
 .nav > li > a.active:hover {
@@ -34,9 +35,57 @@
 }
 .navbar {
   background-color: #333333;
+=======
+body {
+  background-color: #004300;
+}
+.navbar {
+  background-color: #004d00;
+  border-bottom: 1px solid #002c00;
+}
+.navbar a {
+  color: #eeeeee;
+>>>>>>> cabecd0182ad533a244f741f62a4abc4f7aacfd9
 }
 .navbar-top-links {
+  background-color: #004d00;
   margin-right: 0;
+}
+.navbar-top-links .dropdown {
+  background-color: #004d00;
+}
+.navbar-top-links .dropdown .dropdown-menu {
+  background-color: #004d00;
+}
+.navbar-top-links .dropdown .dropdown-menu .divider {
+  background-color: #002c00;
+}
+.navbar-top-links .dropdown a {
+  color: #eeeeee;
+  background-color: #004d00;
+}
+.navbar-top-links .dropdown a:active {
+  background-color: #002c00;
+}
+.navbar-top-links .dropdown a:visited {
+  background-color: #004d00;
+}
+.navbar-top-links .dropdown a:enabled {
+  background-color: #004d00;
+}
+.navbar-top-links .dropdown a:hover {
+  color: #eeeeee;
+  background-color: #002c00;
+}
+.navbar-top-links .dropdown-toggle {
+  color: #eeeeee;
+  background-color: #004d00;
+}
+.navbar-top-links .fa {
+  color: #eeeeee;
+}
+.navbar-top-links .username {
+  color: #eeeeee;
 }
 .navbar-top-links li {
   display: inline-block;
@@ -90,6 +139,7 @@
   right: 0;
   left: auto;
 }
+<<<<<<< HEAD
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #ffffff;
@@ -106,20 +156,48 @@ body {
 /* Sidebar */
 .sidebar a {
   color: #dddddd;
+=======
+.sidebar {
+  background-color: #004300;
+>>>>>>> cabecd0182ad533a244f741f62a4abc4f7aacfd9
 }
 .sidebar .sidebar-nav.navbar-collapse {
   background-color: #333333;
   padding-left: 0;
   padding-right: 0;
 }
+.sidebar ul li {
+  color: #eeeeee;
+}
+.sidebar ul li a {
+  color: #eeeeee;
+}
+.sidebar ul fa {
+  color: #eeeeee;
+}
 .sidebar .sidebar-search {
   padding: 15px;
 }
+<<<<<<< HEAD
 .sidebar ul li a.active {
   background-color: #202020;
   border-style: solid;
   border-color: black;
   border-width: 0.3px;
+=======
+.sidebar ul li {
+  border-bottom: 1px solid #001700;
+  color: #eeeeee;
+}
+.sidebar ul li a:active {
+  background-color: #002200;
+}
+.sidebar ul li a:hover {
+  background-color: #002200;
+}
+.sidebar ul li a:visited {
+  background-color: #002200;
+>>>>>>> cabecd0182ad533a244f741f62a4abc4f7aacfd9
 }
 .sidebar .arrow {
   float: right;
@@ -472,4 +550,9 @@ table.dataTable thead .sorting:after {
     border-right-width: 14px;
     border-left-width: 0;
   }
+}
+.logo-image {
+  margin: 0px;
+  background-color: #f8f8f8;
+  height: 50px;
 }

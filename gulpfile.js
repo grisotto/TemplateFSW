@@ -40,7 +40,7 @@ gulp.task('minify-css', ['less'], function() {
 
 // Copy JS to dist
 gulp.task('js', function() {
-    return gulp.src(['js/sb-admin-2.js'])
+    return gulp.src(['js/sb-admin-2.js', 'js/standalone/selectize.min.js'])
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.reload({
