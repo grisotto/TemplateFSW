@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gulp
+cp dist/css/sb-admin-2.css ../testeTemplate/public/dist/css/sb-admin-2.css
+cp dist/css/sb-admin-2.min.css ../testeTemplate/public/dist/css/sb-admin-2.min.css

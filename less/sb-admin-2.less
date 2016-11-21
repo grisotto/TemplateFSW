@@ -37,14 +37,62 @@ body {
 
 
 
+body {
+		background-color: @sidebar-color;
+}
 
 
-
-
-
+.navbar {
+		background-color: @navbar-color;
+		a {
+				color: @gray-lighter;
+		}
+    border-bottom: 1px solid darken(@navbar-color, 6.5%);
+}
 
 .navbar-top-links {
+		background-color: @navbar-color;
     margin-right: 0;
+
+		.dropdown {
+				background-color: @navbar-color;
+
+				.dropdown-menu
+				{
+						background-color: @navbar-color;
+						.divider {
+								background-color: darken(@navbar-color, 6.5%);
+						}
+				}
+				a {
+						color: @gray-lighter;
+						background-color: @navbar-color;
+						&:active {
+								background-color: darken(@navbar-color, 6.5%);
+						}
+						&:visited {
+								background-color: @navbar-color;
+						}
+						&:enabled {
+								background-color: @navbar-color;
+						}
+						&:hover {
+								color: @gray-lighter;
+								background-color: darken(@navbar-color, 6.5%);
+						}
+				}
+		}
+
+		.dropdown-toggle {
+			 	color: @gray-lighter;
+				background-color: @navbar-color;
+		}
+		.fa {
+				color: @gray-lighter;
+		}
+		.username {
+				color: @gray-lighter;
+		}
 }
 
 .navbar-top-links li {
@@ -104,10 +152,22 @@ body {
 // --Sidebar
 
 .sidebar {
+	background-color: @sidebar-color;
     .sidebar-nav.navbar-collapse {
         padding-left: 0;
         padding-right: 0;
     }
+		ul {
+				li {
+						color: @gray-lighter;
+						a {
+								color: @gray-lighter;
+						}
+				}
+				fa {
+						color: @gray-lighter;
+				}
+		}
 }
 
 .sidebar .sidebar-search {
@@ -115,11 +175,18 @@ body {
 }
 
 .sidebar ul li {
-    border-bottom: 1px solid darken(@gray-lightest, 6.5%);
+    border-bottom: 1px solid darken(@sidebar-color, 8.5%);
+		color: @gray-lighter;
     a {
-        &.active {
-            background-color: @gray-lighter;
+        &:active {
+            background-color: darken(@sidebar-color, 6.5%);
         }
+    		&:hover {
+        		background-color: darken(@sidebar-color, 6.5%);
+    		}
+				&:visited {
+					  background-color: darken(@sidebar-color, 6.5%);
+				}
     }
 }
 
@@ -282,7 +349,7 @@ table.dataTable thead .sorting:after {
     color: rgba(50,50,50,.5);
 }
 
-// Circle Buttons 
+// Circle Buttons
 
 .btn-circle {
     width: 30px;
@@ -556,4 +623,13 @@ table.dataTable thead .sorting:after {
         border-right-width: 14px;
         border-left-width: 0;
     }
+}
+
+
+.logo-image {
+		margin: 0px;
+		background-color: @gray-lightest;
+//		padding-left: 10px;
+//		padding-right: 10px;
+		height: 50px;
 }
