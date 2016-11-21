@@ -23,48 +23,48 @@ body {
   }
 }
 body {
-  background-color: #333333;
+  background-color: #004300;
 }
 .navbar {
-  background-color: #333333;
-  border-bottom: 1px solid #222222;
+  background-color: #004d00;
+  border-bottom: 1px solid #002c00;
 }
 .navbar a {
   color: #eeeeee;
 }
 .navbar-top-links {
-  background-color: #333333;
+  background-color: #004d00;
   margin-right: 0;
 }
 .navbar-top-links .dropdown {
-  background-color: #333333;
+  background-color: #004d00;
 }
 .navbar-top-links .dropdown .dropdown-menu {
-  background-color: #333333;
+  background-color: #004d00;
 }
 .navbar-top-links .dropdown .dropdown-menu .divider {
-  background-color: #222222;
+  background-color: #002c00;
 }
 .navbar-top-links .dropdown a {
   color: #eeeeee;
-  background-color: #333333;
+  background-color: #004d00;
 }
 .navbar-top-links .dropdown a:active {
-  background-color: #222222;
+  background-color: #002c00;
 }
 .navbar-top-links .dropdown a:visited {
-  background-color: #333333;
+  background-color: #004d00;
 }
 .navbar-top-links .dropdown a:enabled {
-  background-color: #333333;
+  background-color: #004d00;
 }
 .navbar-top-links .dropdown a:hover {
   color: #eeeeee;
-  background-color: #222222;
+  background-color: #002c00;
 }
 .navbar-top-links .dropdown-toggle {
   color: #eeeeee;
-  background-color: #333333;
+  background-color: #004d00;
 }
 .navbar-top-links .fa {
   color: #eeeeee;
@@ -115,7 +115,7 @@ body {
   left: auto;
 }
 .sidebar {
-  background-color: #333333;
+  background-color: #004300;
 }
 .sidebar .sidebar-nav.navbar-collapse {
   padding-left: 0;
@@ -134,17 +134,17 @@ body {
   padding: 15px;
 }
 .sidebar ul li {
-  border-bottom: 1px solid #1d1d1d;
+  border-bottom: 1px solid #001700;
   color: #eeeeee;
 }
 .sidebar ul li a:active {
-  background-color: #222222;
+  background-color: #002200;
 }
 .sidebar ul li a:hover {
-  background-color: #222222;
+  background-color: #002200;
 }
 .sidebar ul li a:visited {
-  background-color: #222222;
+  background-color: #002200;
 }
 .sidebar .arrow {
   float: right;

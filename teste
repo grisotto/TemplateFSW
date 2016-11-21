@@ -6,3 +6,5 @@ cp dist/css/sb-admin-2.min.css ../testeTemplate/public/dist/css/sb-admin-2.min.c
 
 cp js/standalone/selectize.min.js ../testeTemplate/public/dist/js/selectize.min.js
 cp dist/css/selectize.default.css ../testeTemplate/public/dist/css/selectize.default.css
+
+echo "Done"
