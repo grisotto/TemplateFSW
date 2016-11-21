@@ -1,10 +1,11 @@
 #!/bin/bash
 
-gulp
-cp dist/css/sb-admin-2.css ../testeTemplate/public/dist/css/sb-admin-2.css
-cp dist/css/sb-admin-2.min.css ../testeTemplate/public/dist/css/sb-admin-2.min.css
+gulp 
 
-cp js/standalone/selectize.min.js ../testeTemplate/public/dist/js/selectize.min.js
-cp dist/css/selectize.default.css ../testeTemplate/public/dist/css/selectize.default.css
+cp dist/css/sb-admin-2.css /home/joaovitor/Documentos/CardRuWeb/public/dist/css/sb-admin-2.css
+cp dist/css/sb-admin-2.min.css /home/joaovitor/Documentos/CardRuWeb/public/dist/css/sb-admin-2.min.css
+
+cp js/standalone/selectize.min.js /home/joaovitor/Documentos/CardRuWeb/public/dist/js/selectize.min.js
+cp dist/css/selectize.default.css /home/joaovitor/Documentos/CardRuWeb/public/dist/css/selectize.default.css
 
 echo "Done"

@@ -33,7 +33,7 @@
 .nav > li > a.active:hover{
     text-decoration: none;
     font-style: italic;
-    background-color: #555555;
+    background-color: darken(@navbar-color, 6.5%);
 }
 .nav .open > a,
 .nav .open > a:hover,
@@ -42,7 +42,7 @@
   border-color: #337ab7;
 }
 .navbar{
-    background-color: @menu-color;
+    background-color: @navbar-color;
 }
 .navbar-top-links {
     margin-right: 0;
@@ -59,43 +59,69 @@
     min-height: 50px;
 }
 .navbar-top-links .dropdown-menu li {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     display: block;
+		&:hover{
+				background-color: darken(@navbar-color, 6.5%);
+		}
 }
 .navbar-top-links .dropdown-menu li:last-child {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     margin-right: 0;
+		&:hover{
+				background-color: darken(@navbar-color, 6.5%);
+		}
 }
 .navbar-top-links .dropdown-menu li a {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     padding: 3px 20px;
     min-height: 0;
+		&:hover{
+				background-color: darken(@navbar-color, 6.5%);
+		}
 }
 .navbar-top-links .dropdown-menu li a div {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     white-space: normal;
+		&:hover{
+				background-color: darken(@navbar-color, 6.5%);
+		}
+
+		.progress {
+				background-color: @navbar-color;
+				&:hover {
+						background-color: @navbar-color;
+				}
+
+				.progress-stripped{
+						background-color: @navbar-color;
+						&:hover {
+								background-color: @navbar-color;
+						}
+				}
+		}
 }
 .navbar-top-links .dropdown-messages,
 .navbar-top-links .dropdown-tasks,
 .navbar-top-links .dropdown-alerts {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     width: 310px;
     min-width: 0;
 }
 .navbar-top-links .dropdown-messages {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     margin-left: 5px;
 }
 .navbar-top-links .dropdown-tasks {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     margin-left: -59px;
 }
 .navbar-top-links .dropdown-alerts {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     margin-left: -123px;
 }
 .navbar-top-links .dropdown-user {
-    background-color: @menu-color;
+    background-color: @navbar-color;
     right: 0;
     left: auto;
 }
@@ -103,32 +129,34 @@
 .dropdown-menu > li > a:focus {
     color: #ffffff;
     text-decoration: none;
-    background-color: #222;
+    background-color: darken(@navbar-color, 6.5%);
     border-style: solid;
-    border-color: #333;
+    border-color: darken(@navbar-color, 10%);
     border-radius: 10px;
     border-width: 0.4px;
 }
 body{
-    background-color: @menu-color;
+    background-color: @navbar-color;
 }
 // --Sidebar
 /* Sidebar */
 .sidebar a{
-  color: #dddddd;
+  background-color: @navbar-color;
+	color: @gray-lighter;
 }
 .sidebar .sidebar-nav.navbar-collapse {
-  background-color: #333333;
+  background-color: @navbar-color;
   padding-left: 0;
   padding-right: 0;
 }
 .sidebar .sidebar-search {
+  background-color: @navbar-color;
   padding: 15px;
 }
 .sidebar ul li a.active {
-    background-color: #202020;
+  	background-color: @navbar-color;
     border-style: solid;
-    border-color: black;
+    border-color: darken(@navbar-color, 10%);
     border-width: 0.3px;
 }
 .sidebar .arrow {
@@ -283,7 +311,7 @@ table.dataTable thead .sorting:after {
     color: rgba(50,50,50,.5);
 }
 
-// Circle Buttons 
+// Circle Buttons
 
 .btn-circle {
     width: 30px;
