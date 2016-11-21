@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - SB Admin 2 v3.3.7+1 (http://startbootstrap.com/template-overviews/sb-admin-2)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Start Bootstrap - Template Fábrica de Software v1.0.0 (http://github.com/qualquercoisaaí)
+ * Copyright 2013-2016 Equipe Fábrica de Software
+ * Licensed under GNU (https://github.com/LICENSE)
  */
 #wrapper {
   width: 100%;
@@ -19,13 +19,12 @@
     border-left: 1px solid #e7e7e7;
   }
 }
-<<<<<<< HEAD
 .nav > li > a:hover,
 .nav > li > a:focus,
 .nav > li > a.active:hover {
   text-decoration: none;
   font-style: italic;
-  background-color: #555555;
+  background-color: #222222;
 }
 .nav .open > a,
 .nav .open > a:hover,
@@ -35,57 +34,9 @@
 }
 .navbar {
   background-color: #333333;
-=======
-body {
-  background-color: #004300;
-}
-.navbar {
-  background-color: #004d00;
-  border-bottom: 1px solid #002c00;
-}
-.navbar a {
-  color: #eeeeee;
->>>>>>> cabecd0182ad533a244f741f62a4abc4f7aacfd9
 }
 .navbar-top-links {
-  background-color: #004d00;
   margin-right: 0;
-}
-.navbar-top-links .dropdown {
-  background-color: #004d00;
-}
-.navbar-top-links .dropdown .dropdown-menu {
-  background-color: #004d00;
-}
-.navbar-top-links .dropdown .dropdown-menu .divider {
-  background-color: #002c00;
-}
-.navbar-top-links .dropdown a {
-  color: #eeeeee;
-  background-color: #004d00;
-}
-.navbar-top-links .dropdown a:active {
-  background-color: #002c00;
-}
-.navbar-top-links .dropdown a:visited {
-  background-color: #004d00;
-}
-.navbar-top-links .dropdown a:enabled {
-  background-color: #004d00;
-}
-.navbar-top-links .dropdown a:hover {
-  color: #eeeeee;
-  background-color: #002c00;
-}
-.navbar-top-links .dropdown-toggle {
-  color: #eeeeee;
-  background-color: #004d00;
-}
-.navbar-top-links .fa {
-  color: #eeeeee;
-}
-.navbar-top-links .username {
-  color: #eeeeee;
 }
 .navbar-top-links li {
   display: inline-block;
@@ -102,18 +53,42 @@ body {
   background-color: #333333;
   display: block;
 }
+.navbar-top-links .dropdown-menu li:hover {
+  background-color: #222222;
+}
 .navbar-top-links .dropdown-menu li:last-child {
   background-color: #333333;
   margin-right: 0;
+}
+.navbar-top-links .dropdown-menu li:last-child:hover {
+  background-color: #222222;
 }
 .navbar-top-links .dropdown-menu li a {
   background-color: #333333;
   padding: 3px 20px;
   min-height: 0;
 }
+.navbar-top-links .dropdown-menu li a:hover {
+  background-color: #222222;
+}
 .navbar-top-links .dropdown-menu li a div {
   background-color: #333333;
   white-space: normal;
+}
+.navbar-top-links .dropdown-menu li a div:hover {
+  background-color: #222222;
+}
+.navbar-top-links .dropdown-menu li a div .progress {
+  background-color: #333333;
+}
+.navbar-top-links .dropdown-menu li a div .progress:hover {
+  background-color: #333333;
+}
+.navbar-top-links .dropdown-menu li a div .progress .progress-stripped {
+  background-color: #333333;
+}
+.navbar-top-links .dropdown-menu li a div .progress .progress-stripped:hover {
+  background-color: #333333;
 }
 .navbar-top-links .dropdown-messages,
 .navbar-top-links .dropdown-tasks,
@@ -139,14 +114,13 @@ body {
   right: 0;
   left: auto;
 }
-<<<<<<< HEAD
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #222;
+  background-color: #222222;
   border-style: solid;
-  border-color: #333;
+  border-color: #1a1a1a;
   border-radius: 10px;
   border-width: 0.4px;
 }
@@ -155,49 +129,23 @@ body {
 }
 /* Sidebar */
 .sidebar a {
-  color: #dddddd;
-=======
-.sidebar {
-  background-color: #004300;
->>>>>>> cabecd0182ad533a244f741f62a4abc4f7aacfd9
+  background-color: #333333;
+  color: #eeeeee;
 }
 .sidebar .sidebar-nav.navbar-collapse {
   background-color: #333333;
   padding-left: 0;
   padding-right: 0;
 }
-.sidebar ul li {
-  color: #eeeeee;
-}
-.sidebar ul li a {
-  color: #eeeeee;
-}
-.sidebar ul fa {
-  color: #eeeeee;
-}
 .sidebar .sidebar-search {
+  background-color: #333333;
   padding: 15px;
 }
-<<<<<<< HEAD
 .sidebar ul li a.active {
-  background-color: #202020;
+  background-color: #333333;
   border-style: solid;
-  border-color: black;
+  border-color: #1a1a1a;
   border-width: 0.3px;
-=======
-.sidebar ul li {
-  border-bottom: 1px solid #001700;
-  color: #eeeeee;
-}
-.sidebar ul li a:active {
-  background-color: #002200;
-}
-.sidebar ul li a:hover {
-  background-color: #002200;
-}
-.sidebar ul li a:visited {
-  background-color: #002200;
->>>>>>> cabecd0182ad533a244f741f62a4abc4f7aacfd9
 }
 .sidebar .arrow {
   float: right;
@@ -550,9 +498,4 @@ table.dataTable thead .sorting:after {
     border-right-width: 14px;
     border-left-width: 0;
   }
-}
-.logo-image {
-  margin: 0px;
-  background-color: #f8f8f8;
-  height: 50px;
 }

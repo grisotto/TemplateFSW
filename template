@@ -4,6 +4,21 @@ if [ -z "$1" ]
 then
 	./template -h
 
+elif [ "$1" = "switch" ]
+then
+	if [ "$2" = "up" ]
+	then
+		cp bower_bkp.json bower.json
+	elif [ "$2" = "down" ]
+	then
+		cp bower_manter.json bower.json
+	else
+		echo "Defina porque irá trocar o arquivo"
+		echo "       up   -> irei upar pro github"
+		echo "       down -> acabei de atualizar o template"
+	fi
+
+
 elif [ "$1" = "update" ] ##############################################UPDATE
 then
 	if [ -z "$2" ]
