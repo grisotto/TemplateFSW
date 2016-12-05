@@ -34,16 +34,20 @@ body {
 
 // -- -- Modificações feito pela fábrica
 
+// -- -- Definições de fonte
+
 
 
 
 body {
 		background-color: @sidebar-color;
+		font-family: 'Roboto', sans-serif;
 }
 
 
 .navbar {
 		background-color: @navbar-color;
+		color: @gray-lighter;
 		a {
 				color: @gray-lighter;
 		}
@@ -148,6 +152,32 @@ body {
     right: 0;
     left: auto;
 }
+
+
+.nav//Corrige bug de muita coisa kkk
+{
+	background-color: @sidebar-color;
+	li
+	{
+		.active //CLASSE Active
+		{
+				background-color: darken(@sidebar-color, 10%);
+		}
+		a
+		{
+			&:focus
+			{
+					background-color: darken(@sidebar-color, 10%);
+			}
+
+			&:active
+			{
+					background-color: darken(@sidebar-color, 10%);
+			}
+		}
+	}
+}
+
 
 // --Sidebar
 

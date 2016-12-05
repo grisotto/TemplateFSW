@@ -23,48 +23,50 @@ body {
   }
 }
 body {
-  background-color: #004300;
+  background-color: navy;
+  font-family: 'Roboto', sans-serif;
 }
 .navbar {
-  background-color: #004d00;
-  border-bottom: 1px solid #002c00;
+  background-color: navy;
+  color: #eeeeee;
+  border-bottom: 1px solid #00005f;
 }
 .navbar a {
   color: #eeeeee;
 }
 .navbar-top-links {
-  background-color: #004d00;
+  background-color: navy;
   margin-right: 0;
 }
 .navbar-top-links .dropdown {
-  background-color: #004d00;
+  background-color: navy;
 }
 .navbar-top-links .dropdown .dropdown-menu {
-  background-color: #004d00;
+  background-color: navy;
 }
 .navbar-top-links .dropdown .dropdown-menu .divider {
-  background-color: #002c00;
+  background-color: #00005f;
 }
 .navbar-top-links .dropdown a {
   color: #eeeeee;
-  background-color: #004d00;
+  background-color: navy;
 }
 .navbar-top-links .dropdown a:active {
-  background-color: #002c00;
+  background-color: #00005f;
 }
 .navbar-top-links .dropdown a:visited {
-  background-color: #004d00;
+  background-color: navy;
 }
 .navbar-top-links .dropdown a:enabled {
-  background-color: #004d00;
+  background-color: navy;
 }
 .navbar-top-links .dropdown a:hover {
   color: #eeeeee;
-  background-color: #002c00;
+  background-color: #00005f;
 }
 .navbar-top-links .dropdown-toggle {
   color: #eeeeee;
-  background-color: #004d00;
+  background-color: navy;
 }
 .navbar-top-links .fa {
   color: #eeeeee;
@@ -114,8 +116,20 @@ body {
   right: 0;
   left: auto;
 }
+.nav {
+  background-color: navy;
+}
+.nav li .active {
+  background-color: #00004d;
+}
+.nav li a:focus {
+  background-color: #00004d;
+}
+.nav li a:active {
+  background-color: #00004d;
+}
 .sidebar {
-  background-color: #004300;
+  background-color: navy;
 }
 .sidebar .sidebar-nav.navbar-collapse {
   padding-left: 0;
@@ -134,17 +148,17 @@ body {
   padding: 15px;
 }
 .sidebar ul li {
-  border-bottom: 1px solid #001700;
+  border-bottom: 1px solid #000055;
   color: #eeeeee;
 }
 .sidebar ul li a:active {
-  background-color: #002200;
+  background-color: #00005f;
 }
 .sidebar ul li a:hover {
-  background-color: #002200;
+  background-color: #00005f;
 }
 .sidebar ul li a:visited {
-  background-color: #002200;
+  background-color: #00005f;
 }
 .sidebar .arrow {
   float: right;
