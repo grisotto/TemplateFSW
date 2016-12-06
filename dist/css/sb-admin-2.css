@@ -19,21 +19,17 @@
     border-left: 1px solid #e7e7e7;
   }
 }
-.nav > li > a:hover,
-.nav > li > a:focus,
-.nav > li > a.active:hover {
-  text-decoration: none;
-  font-style: italic;
-  background-color: #222222;
-}
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
-  background-color: #222;
-  border-color: #337ab7;
+body {
+  background-color: navy;
+  font-family: 'Roboto', sans-serif;
 }
 .navbar {
-  background-color: #333333;
+  background-color: navy;
+  color: #eeeeee;
+  border-bottom: 1px solid #00005f;
+}
+.navbar a {
+  color: #eeeeee;
 }
 .navbar-top-links {
   margin-right: 0;
@@ -50,101 +46,100 @@
   min-height: 50px;
 }
 .navbar-top-links .dropdown-menu li {
-  background-color: #333333;
+  background-color: navy;
   display: block;
 }
 .navbar-top-links .dropdown-menu li:hover {
-  background-color: #222222;
+  background-color: #00005f;
 }
 .navbar-top-links .dropdown-menu li:last-child {
-  background-color: #333333;
+  background-color: navy;
   margin-right: 0;
 }
 .navbar-top-links .dropdown-menu li:last-child:hover {
-  background-color: #222222;
+  background-color: #00005f;
 }
 .navbar-top-links .dropdown-menu li a {
-  background-color: #333333;
+  background-color: navy;
   padding: 3px 20px;
   min-height: 0;
 }
 .navbar-top-links .dropdown-menu li a:hover {
-  background-color: #222222;
+  background-color: #00005f;
 }
 .navbar-top-links .dropdown-menu li a div {
-  background-color: #333333;
+  background-color: navy;
   white-space: normal;
 }
 .navbar-top-links .dropdown-menu li a div:hover {
-  background-color: #222222;
+  background-color: #00005f;
 }
 .navbar-top-links .dropdown-menu li a div .progress {
-  background-color: #333333;
+  background-color: navy;
 }
 .navbar-top-links .dropdown-menu li a div .progress:hover {
-  background-color: #333333;
+  background-color: navy;
 }
 .navbar-top-links .dropdown-menu li a div .progress .progress-stripped {
-  background-color: #333333;
+  background-color: navy;
 }
 .navbar-top-links .dropdown-menu li a div .progress .progress-stripped:hover {
-  background-color: #333333;
+  background-color: navy;
 }
 .navbar-top-links .dropdown-messages,
 .navbar-top-links .dropdown-tasks,
 .navbar-top-links .dropdown-alerts {
-  background-color: #333333;
+  background-color: navy;
   width: 310px;
   min-width: 0;
 }
 .navbar-top-links .dropdown-messages {
-  background-color: #333333;
+  background-color: navy;
   margin-left: 5px;
 }
 .navbar-top-links .dropdown-tasks {
-  background-color: #333333;
+  background-color: navy;
   margin-left: -59px;
 }
 .navbar-top-links .dropdown-alerts {
-  background-color: #333333;
+  background-color: navy;
   margin-left: -123px;
 }
 .navbar-top-links .dropdown-user {
-  background-color: #333333;
+  background-color: navy;
   right: 0;
   left: auto;
 }
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #222222;
-  border-style: solid;
-  border-color: #1a1a1a;
-  border-radius: 10px;
-  border-width: 0.4px;
+.nav {
+  background-color: navy;
 }
-body {
-  background-color: #333333;
+.nav li .active {
+  background-color: #00004d;
+}
+.nav li a:focus {
+  background-color: #00004d;
+}
+.nav li a:active {
+  background-color: #00004d;
 }
 /* Sidebar */
 .sidebar a {
-  background-color: #333333;
+  background-color: navy;
   color: #eeeeee;
 }
 .sidebar .sidebar-nav.navbar-collapse {
-  background-color: #333333;
+  background-color: navy;
   padding-left: 0;
   padding-right: 0;
 }
 .sidebar .sidebar-search {
-  background-color: #333333;
+  background-color: navy;
   padding: 15px;
 }
 .sidebar ul li a.active {
-  background-color: #333333;
+  background-color: navy;
   border-style: solid;
-  border-color: #1a1a1a;
+  border-color: #00004d;
   border-width: 0.3px;
 }
 .sidebar .arrow {
