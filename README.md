@@ -48,6 +48,7 @@ bower install FSWTemplate
 ```
 
 Lista Atual de plugins disponiveis:
+
 ![arm robot](/test/plugins_list.png)
 
 <a name="Manter"></a>
