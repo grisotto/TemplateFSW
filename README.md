@@ -12,6 +12,8 @@ Template genérico para os projetos desenvolvidos na Fábrica de Software da UFG
 - [Estrutura de Pastas](#Pastas)
 - [Instalação](#Install)
 - [Para modificar o template](#Manter)
+- [Para adicionar novas dependências/plugins](#Adicionar)
+
 
 
 <a name="Intro"></a>
@@ -45,6 +47,8 @@ bower install FSWTemplate
           - plugins
 ```
 
+Lista Atual de plugins disponiveis:
+![arm robot](/test/plugins_list.png)
 
 <a name="Manter"></a>
 ## Para modificar o template
@@ -58,6 +62,22 @@ npm install
 Utilize:
 * `gulp` O comando irá executar as tarefas compilando o LESS e o JS na pasta `dist` e minify , e irá copiar toda os plugins da pasta `bower_components` na pasta `plugins`
 * `bower update` para atualizar as dependências
+
+----------
+<a name="Adicionar"></a>
+## Para adicionar novas dependências/plugins
+
+Depois de fizer a alteracao do nome do `bower_manter` para `bower`
+
+```bash
+bower install <nome-da-dependencia> -S
+```
+
+Depois de adicionado, rode o update para validar as dependências
+```bash
+bower update
+```
+
 
 ----------
 **Materiais de Apoio**

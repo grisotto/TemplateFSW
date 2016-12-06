@@ -1,38 +1,48 @@
 {
-  "name": "templatefsw",
-  "homepage": "http://www.jatai.ufg.br",
-  "version": "0.1",
+  "name": "template-fsw",
+  "homepage": "http://github.com/qualquercoisaaí",
+  "version": "1.0.0",
   "authors": [
-    "Dyemyis",
-    "Rafael Grisotto"
+    "Equipe Fábrica de Software"
   ],
-  "description": "Template para todos os projetos da Fábrica de Software da UFG Jataí",
+  "description": "Template usado para os projetos da Fábrica de Software da Regional Jataí",
   "keywords": [
     "bootstrap",
-    "theme",
-    "UFG"
+    "theme"
   ],
-  "license": "MIT",
+  "license": "GNU",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "bower_manter.json",
-    "/js",
-    "package.json",
-    "/vendor",
-    "gulpfile.js",
-    "/less",
-		"Install-Template.sh",
-		"teste",
+    "test",
     "tests",
-	"template"
+    "pages",
+    "index.html",
+    "/js"
   ],
   "main": [
     "dist/css/sb-admin-2.css",
     "dist/css/sb-admin-2.min.css",
     "dist/js/sb-admin-2.js",
     "dist/js/sb-admin-2.min.js"
-  ]
-
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "datatables": "~1.10.4",
+    "datatables-plugins": "~1.0.1",
+    "flot": "~0.8.3",
+    "font-awesome": "~4.6.3",
+    "holderjs": "~2.4.1",
+    "metisMenu": "~1.1.3",
+    "morrisjs": "~0.5.1",
+    "datatables-responsive": "1.0.6",
+    "bootstrap-social": "~4.8.0",
+    "flot.tooltip": "~0.8.4",
+    "jquery": "~2.1",
+    "select2": "^4.0.3"
+  },
+  "resolutions": {
+    "font-awesome": "~4.6.3"
+  }
 }
