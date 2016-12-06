@@ -3,6 +3,9 @@
  * Copyright 2013-2016 Equipe Fábrica de Software
  * Licensed under GNU (https://github.com/LICENSE)
  */
+body {
+  background-color: #f8f8f8;
+}
 #wrapper {
   width: 100%;
 }
@@ -14,26 +17,10 @@
 @media (min-width: 768px) {
   #page-wrapper {
     position: inherit;
-    margin: 0 0 0 230px;
+    margin: 0 0 0 250px;
     padding: 0 30px;
     border-left: 1px solid #e7e7e7;
   }
-}
-.nav > li > a:hover,
-.nav > li > a:focus,
-.nav > li > a.active:hover {
-  text-decoration: none;
-  font-style: italic;
-  background-color: #222222;
-}
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
-  background-color: #222;
-  border-color: #337ab7;
-}
-.navbar {
-  background-color: #333333;
 }
 .navbar-top-links {
   margin-right: 0;
@@ -45,107 +32,53 @@
   margin-right: 15px;
 }
 .navbar-top-links li a {
-  color: #dddddd;
   padding: 15px;
   min-height: 50px;
 }
 .navbar-top-links .dropdown-menu li {
-  background-color: #333333;
   display: block;
 }
-.navbar-top-links .dropdown-menu li:hover {
-  background-color: #222222;
-}
 .navbar-top-links .dropdown-menu li:last-child {
-  background-color: #333333;
   margin-right: 0;
 }
-.navbar-top-links .dropdown-menu li:last-child:hover {
-  background-color: #222222;
-}
 .navbar-top-links .dropdown-menu li a {
-  background-color: #333333;
   padding: 3px 20px;
   min-height: 0;
 }
-.navbar-top-links .dropdown-menu li a:hover {
-  background-color: #222222;
-}
 .navbar-top-links .dropdown-menu li a div {
-  background-color: #333333;
   white-space: normal;
-}
-.navbar-top-links .dropdown-menu li a div:hover {
-  background-color: #222222;
-}
-.navbar-top-links .dropdown-menu li a div .progress {
-  background-color: #333333;
-}
-.navbar-top-links .dropdown-menu li a div .progress:hover {
-  background-color: #333333;
-}
-.navbar-top-links .dropdown-menu li a div .progress .progress-stripped {
-  background-color: #333333;
-}
-.navbar-top-links .dropdown-menu li a div .progress .progress-stripped:hover {
-  background-color: #333333;
 }
 .navbar-top-links .dropdown-messages,
 .navbar-top-links .dropdown-tasks,
 .navbar-top-links .dropdown-alerts {
-  background-color: #333333;
   width: 310px;
   min-width: 0;
 }
 .navbar-top-links .dropdown-messages {
-  background-color: #333333;
   margin-left: 5px;
 }
 .navbar-top-links .dropdown-tasks {
-  background-color: #333333;
   margin-left: -59px;
 }
 .navbar-top-links .dropdown-alerts {
-  background-color: #333333;
   margin-left: -123px;
 }
 .navbar-top-links .dropdown-user {
-  background-color: #333333;
   right: 0;
   left: auto;
 }
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #222222;
-  border-style: solid;
-  border-color: #1a1a1a;
-  border-radius: 10px;
-  border-width: 0.4px;
-}
-body {
-  background-color: #333333;
-}
-/* Sidebar */
-.sidebar a {
-  background-color: #333333;
-  color: #eeeeee;
-}
 .sidebar .sidebar-nav.navbar-collapse {
-  background-color: #333333;
   padding-left: 0;
   padding-right: 0;
 }
 .sidebar .sidebar-search {
-  background-color: #333333;
   padding: 15px;
 }
+.sidebar ul li {
+  border-bottom: 1px solid #e7e7e7;
+}
 .sidebar ul li a.active {
-  background-color: #333333;
-  border-style: solid;
-  border-color: #1a1a1a;
-  border-width: 0.3px;
+  background-color: #eeeeee;
 }
 .sidebar .arrow {
   float: right;
@@ -170,8 +103,8 @@ body {
   .sidebar {
     z-index: 1;
     position: absolute;
-    width: 230px;
-    margin-top: 50px;
+    width: 250px;
+    margin-top: 51px;
   }
   .navbar-top-links .dropdown-messages,
   .navbar-top-links .dropdown-tasks,
