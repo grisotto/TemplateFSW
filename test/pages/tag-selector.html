@@ -1,0 +1,171 @@
+<!Doctype HTML>
+<html>
+<header>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pagina de teste do plugin selectize">
+    <meta name="author" content="Equipe Fábrica de Software - UFG-Jataí">
+	<title>Using Selectize Plugin</title>
+	<!-- CSS -->
+		<!--Bootstrap css-->
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+		<!-- SB-Admin-2 style -->
+		<link hrel="stylesheet" ref="../../dist/css/sb-admin-2.min.css">
+		<!-- Selectize-Plugin Style -->
+		<link rel="stylesheet" href="../../dist/css/selectize.default.css">
+
+<!-- Deve manter essa ordem (de importação de scripts) -->
+	<!-- Theme Scripts -->
+		<!-- JQuery Plugin -->
+		<script src="../../plugins/jquery/jquery.min.js"/>
+		<!-- Metis Menu plugin -->
+		<script src="../../plugins/metisMenu/metisMenu.min.js"/>
+		<!-- SB-Admin-2 Script -->
+		<script src="../../dist/js/sb-admin-2.js"></script>
+
+	<!-- Plugin scripts -->
+		<!-- Bootstrap Javascript -->
+		<script src="../../bootstrap/js/bootstrap.min.js"></script>
+		<!-- Selectize Javascript (NEED BE ON HEADER) -->
+		<script src="../../dist/js/selectize.min.js"/>
+
+</header>
+<body>
+	<div id="wrapper">
+<!--Navigation Bar theme -->
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="index.html">Card<b>RU</b></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i><span class="username">  Nome de Usuário</span> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.php"><i class="fa fa-sign-out fa-fw"></i> Sair</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <!--<li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>  -->
+                            <!-- /input-group  -->
+                        <!-- </li> -->
+                        <li>
+                            <a href="/"><i class="fa fa-home fa-fw"></i> Página Inicial</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-cutlery fa-fw fa-sitemap"></i> Cardápios</a>
+							<ul class="nav nav-second-level">
+								<li>
+									<a href="daily">Diário</a>
+								</li>
+								<li>
+									<a href="week">Semanal</a>
+								</li>
+							</ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-power-off fa-fw"></i> Sair</a>
+                        </li>
+                        <!--<li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html">Panels and Wells</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Notifications</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="icons.html"> Icons</a>
+                                </li>
+                                <li>
+                                    <a href="grid.html">Grid</a>
+                                </li>
+                            </ul>
+                            nav-second-level
+                        <li> -->
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+<!-- This file contains the most used scripts to run in all pages -->
+
+	<div id="page-wrapper">
+<!-- First example -->
+		<h1>Teste de template</h1>
+		<h2>Somente Seletor</h2>
+		<div class="control-group">
+			<label for="input-tags">Tags:</label>
+			<input type="text" id="Tag-For-Test" class="demo-default" value="tomate, milho, polvilho, ovo">
+		</div>
+		<script>
+			$('#Tag-For-Test').selectize({
+				persist: false,
+				createOnBlur: true,
+				create: false
+			});
+		</script>
+
+<!-- Second example -->
+		<h2>
+			Seletor com permissão pra adição de itens
+		</h2>
+		<div class="control-group">
+			<label for="input-tags">Tags:</label>
+			<input type="text" id="addAndSelectTags" class="demo-default" value="tomate, milho, polvilho, ovo">
+		</div>
+		<script>
+			$('#addAndSelectTags').selectize({
+				persist: false,
+				createOnBlur: true,
+				create: true
+			});
+		</script>
+
+
+	</div> <!-- /page-wrapper -->
+</body>
+</html>

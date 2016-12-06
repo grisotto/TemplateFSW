@@ -28,21 +28,24 @@
 
 // -- -- Modificações feito pela fábrica
 
-.nav > li > a:hover,
-.nav > li > a:focus,
-.nav > li > a.active:hover{
-    text-decoration: none;
-    font-style: italic;
-    background-color: darken(@navbar-color, 6.5%);
+// -- -- Definições de fonte
+
+
+
+
+body {
+		background-color: @sidebar-color;
+		font-family: 'Roboto', sans-serif;
 }
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
-  background-color: #222;
-  border-color: #337ab7;
-}
-.navbar{
-    background-color: @navbar-color;
+
+
+.navbar {
+		background-color: @navbar-color;
+		color: @gray-lighter;
+		a {
+				color: @gray-lighter;
+		}
+    border-bottom: 1px solid darken(@navbar-color, 6.5%);
 }
 .navbar-top-links {
     margin-right: 0;
@@ -125,19 +128,32 @@
     right: 0;
     left: auto;
 }
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: darken(@navbar-color, 6.5%);
-    border-style: solid;
-    border-color: darken(@navbar-color, 10%);
-    border-radius: 10px;
-    border-width: 0.4px;
+
+.nav//Corrige bug de muita coisa kkk
+{
+	background-color: @sidebar-color;
+	li
+	{
+		.active //CLASSE Active
+		{
+				background-color: darken(@sidebar-color, 10%);
+		}
+		a
+		{
+			&:focus
+			{
+					background-color: darken(@sidebar-color, 10%);
+			}
+
+			&:active
+			{
+					background-color: darken(@sidebar-color, 10%);
+			}
+		}
+	}
 }
-body{
-    background-color: @navbar-color;
-}
+
+
 // --Sidebar
 /* Sidebar */
 .sidebar a{
