@@ -101,6 +101,9 @@ gulp.task('copy', function() {
     gulp.src(['bower_components/select2/dist/**/*'])
         .pipe(gulp.dest('plugins/select2'))
 
+        gulp.src(['less/fsw-bootstrap.css'])
+        .pipe(gulp.dest('dist/css'))
+
 })
 
 // Run everything
