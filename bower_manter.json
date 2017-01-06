@@ -40,7 +40,8 @@
     "bootstrap-social": "~4.8.0",
     "flot.tooltip": "~0.8.4",
     "jquery": "~2.1",
-    "select2": "^4.0.3"
+    "select2": "^4.0.3",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.44"
   },
   "resolutions": {
     "font-awesome": "~4.6.3"

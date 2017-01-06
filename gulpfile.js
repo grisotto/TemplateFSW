@@ -101,6 +101,16 @@ gulp.task('copy', function() {
     gulp.src(['bower_components/select2/dist/**/*'])
         .pipe(gulp.dest('plugins/select2'))
 
+        gulp.src(['bower_components/moment/min/**/*'])
+        .pipe(gulp.dest('plugins/moment/min'))
+
+                gulp.src(['bower_components/moment/locale/**/*'])
+        .pipe(gulp.dest('plugins/moment/locale'))
+
+                gulp.src(['bower_components/eonasdan-bootstrap-datetimepicker/build/**/*'])
+        .pipe(gulp.dest('plugins/bootstrap-datetimepicker'))
+
+
         gulp.src(['less/fsw-bootstrap.css'])
         .pipe(gulp.dest('dist/css'))
 
